@@ -1,17 +1,17 @@
-title: '@AWWWRY'
+title: 'Work Confessions'
 logo: 
-description: American-Indonesian father, fiancé, product designer and front-end developer from Los Angeles, California.
-keywords: Ary Mega, American-Indonesian, Balinese, Product Designer, UX Designer, Front-End Engineer, Web Developer
+description: A safe place for us to vent about the bullshit at work.
+keywords:
 baseurl: ""
-url: "https://awwwry.com"
+url: "https://confess.work"
 
 
 # Author Settings
 author:
-  name: '@AWWWRY'
+  name: 'Work Confessions'
   image: https://media.giphy.com/media/5n067EUZwH8cvtRfGz/giphy.gif
-  job: Full-time Balinese father and fiancé. Sometimes product designer and web developer.
-  bio: American-Indonesian father, fiancé, product designer and front-end developer from Los Angeles, California.
+  job: Work Confessions
+  bio: A safe place for us to vent about the bullshit at work 🤬
   email: arymega@gmail.com
 
 
@@ -38,7 +38,7 @@ disqus-identifier:
 
 
 # Google Analytics
-google-analytics: UA-64088985-1
+google-analytics:
 
 
 # Build settings
