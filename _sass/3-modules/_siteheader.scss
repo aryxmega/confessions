@@ -1,5 +1,5 @@
-/* Author */
-.author {
+/* siteheader */
+.siteheader {
   margin: 80px 0 20px;
   padding-bottom: 40px;
   //border-bottom: 1px dashed #ddd;
@@ -9,7 +9,7 @@
   }
 }
 
-.author__img {
+.siteheader__img {
   display: block;
   max-width: 130px;
   max-height: 130px;
@@ -24,7 +24,7 @@
   }
 }
 
-.author__job {
+.siteheader__title {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 68px;
@@ -37,8 +37,8 @@
   }
 }
 
-.author__bio,
-.author__notes {
+.siteheader__slogan,
+.siteheader__notes {
   margin: 0 auto 40px;
   font-size: 24px;
   line-height: 1.6;
@@ -51,12 +51,12 @@
   }
 }
 
-.author__notes {
+.siteheader__notes {
   font-size: 16px;
   max-width: 320px
 }
 
-.author__more,
+.siteheader__more,
 .confessed__submitted {
   margin: 60px auto 0;
   text-align: center;

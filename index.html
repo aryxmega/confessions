@@ -3,11 +3,11 @@ layout: default
 ---
 
 <div class="container">
-  <section class="author" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
-    <div class="author__inner">
-      <h1 class="author__job">{{ site.author.job }}</h1>
-      <p class="author__bio">{{ site.author.bio }}</p>
-      <div class="author__more">
+  <section class="siteheader" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
+    <div class="siteheader__inner">
+      <h1 class="siteheader__title">{{ site.siteheader.title }}</h1>
+      <p class="siteheader__slogan">{{ site.siteheader.slogan }}</p>
+      <div class="siteheader__more">
         <form name="Confessions" action="/confessed/" method="POST" data-netlify="true">
           <p>
             <input type="text" name="confession" placeholder="Make your own reports, Susan 🤬" />
@@ -24,28 +24,17 @@ layout: default
 <div class="container">
   {% if site.posts.size > 0 %}
     {% for post in site.posts %}
-    <div class="article" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">
+    <div class="confession" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">
       {% if post.image %}
-      <div class="article__image-box">
-        <a href="{{post.url | prepend: site.baseurl}}" class="article__image" style="background-image: url({{site.baseurl}}{{post.image}})"></a>
+      <div class="confession__image-box">
+        <a href="{{post.url | prepend: site.baseurl}}" class="confession__image" style="background-image: url({{site.baseurl}}{{post.image}})"></a>
       </div>
       {% endif %}
-      <div class="article__content">
-        <div class="article__meta">
-          <span class="article__date"><time datetime="{{ post.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ post.date | date: date_format }}</time></span>
+      <div class="confession__content">
+        <div class="confession__meta">
+          <span class="confession__date"><time datetime="{{ post.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ post.date | date: date_format }}</time></span>
         </div>
-        <h2 class="article__title">{{post.title}}</h2>
-
-        <!--<div class="post__share">
-          <ul class="share__list list-reset">
-            <li class="share__item">
-              <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text={{ post.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-                onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow">
-                  <svg enable-background="new 0 0 56.693 56.693" height="56.693" viewBox="0 0 56.693 56.693" width="56.693" xmlns="http://www.w3.org/2000/svg"><path d="m52.837 15.065c-1.811.805-3.76 1.348-5.805 1.591 2.088-1.25 3.689-3.23 4.444-5.592-1.953 1.159-4.115 2-6.418 2.454-1.843-1.964-4.47-3.192-7.377-3.192-5.581 0-10.106 4.525-10.106 10.107 0 .791.089 1.562.262 2.303-8.4-.422-15.848-4.445-20.833-10.56-.87 1.492-1.368 3.228-1.368 5.082 0 3.506 1.784 6.6 4.496 8.412-1.656-.053-3.215-.508-4.578-1.265-.001.042-.001.085-.001.128 0 4.896 3.484 8.98 8.108 9.91-.848.23-1.741.354-2.663.354-.652 0-1.285-.063-1.902-.182 1.287 4.015 5.019 6.938 9.441 7.019-3.459 2.711-7.816 4.327-12.552 4.327-.815 0-1.62-.048-2.411-.142 4.474 2.869 9.786 4.541 15.493 4.541 18.591 0 28.756-15.4 28.756-28.756 0-.438-.009-.875-.028-1.309 1.974-1.422 3.688-3.203 5.042-5.23z"/></svg>
-                </a>
-            </li>
-          </ul>
-        </div>-->
+        <h2 class="confession__title">{{post.title}}</h2>
       </div>
     </div>
     {% endfor %}
@@ -53,5 +42,5 @@ layout: default
 </div>
 
 <div class="container">
-  <p class="author__notes">Adding <a href="https://giphy.com/" title="https://giphy.com/" target="_blank">Giphys</a> with your confessions, available in the next code deployment.</p>
+  <p class="siteheader__notes">Adding <a href="https://giphy.com/" title="https://giphy.com/" target="_blank">Giphys</a> with your confessions, available in the next code deployment.</p>
 </div>

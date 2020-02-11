@@ -6,12 +6,12 @@ baseurl: ""
 url: "https://confess.work"
 
 
-# Author Settings
-author:
+# Siteheader Settings
+siteheader:
   name: 'Work Confessions'
   image: https://media.giphy.com/media/5n067EUZwH8cvtRfGz/giphy.gif
-  job: Work Confessions
-  bio: 'The #1 place to vent about work, anonymously.'
+  title: Work Confessions
+  slogan: 'The #1 place to vent about work, anonymously.'
   email:
 
 
