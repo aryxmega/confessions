@@ -1,6 +1,6 @@
 title: 'Work Confessions'
 logo: 
-description: The place to vent about the bullshit at work.
+description: 'The #1 place to vent about work, anonymously.'
 keywords:
 baseurl: ""
 url: "https://confess.work"
@@ -11,8 +11,8 @@ author:
   name: 'Work Confessions'
   image: https://media.giphy.com/media/5n067EUZwH8cvtRfGz/giphy.gif
   job: Work Confessions
-  bio: A safe place to vent about work.
-  email: arymega@gmail.com
+  bio: 'The #1 place to vent about work, anonymously.'
+  email:
 
 
 # Contact links
