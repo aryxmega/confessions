@@ -1,0 +1,37 @@
+# Title of your blog; shows in the header
+name: "@ry"
+
+# Description of your content (will only be used on Google Search)
+description: "American-Indonesian product designer and front-end engineer."
+
+# Your name. Will show in your footer + sidebar
+author: "Ary"
+
+url: "http://awwwry.com"
+baseurl: ""
+
+# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
+author-bio: "I'm an American-Indonesian from Los Angeles, California. During business hours, I provide e-commerce solutions as a product designer and front-end engineer. After hours, I dedicate my time to my partner, Alexandra, our son, Arro, or working on my personal ventures."
+
+# Social Accounts
+
+twitter: awwwry
+github: awwwry
+instagram: awwwry
+linkedin: awwwry
+
+# Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
+
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/page/:num"
+
+# SCSS
+
+sass:
+  sass_dir: _scss
+  style: :compressed
