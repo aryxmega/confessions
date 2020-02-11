@@ -2,36 +2,62 @@
 layout: default
 ---
 
-<section class="single-wrap">
-  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <h1 class="page-title" itemprop="name headline">{{ page.title }}</h1>
-
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      {{ page.date | date: '%B %d, %Y' }}
-    </time>
-
-    <div class="article-body" itemprop="articleBody">
-      {{ content }}
+<div class="container">
+  <article class="post">
+    <div class="post__head" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
+      <h1 class="post__title">{{ page.title | escape }}</h1>
+      <div class="post__date">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%B %d, %Y'}}</time>
+      </div>
+      {% if page.image %}
+      <div class="post-image img-blur" style="background-image: url({{site.baseurl}}{{page.image}})"></div>
+      {% endif %}
     </div>
 
-    <!--<div class="feat share">
-      <a href="http://twitter.com/share" class="popup">
-        <span class="icon-twitter"></span>
-      </a>
-    </div>-->
+    <div class="post__content" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-delay="100" data-aos-duration="700">
+      {{ content }}
 
-    {% if page.next %}
-      <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
-        <span class="nav-title nav-title-next">newer</span> &rarr;
-      </a>
+      <h3>Currently listening to:</h3>
+      <iframe src="https://open.spotify.com/embed/playlist/0hvGuO3GFmX3zNWxaK17sZ" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" style="border: 20px solid #f8f8f8; box-shadow: 0 10px 20px -4px rgba(30,28,122,0.3); margin-bottom: 30px;"></iframe>
+    </div>
+
+    {% if page.tags.size >= 1 %}
+    <div class="post-tags">
+      {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}/tag/{{ tag }}" class="post-tags__tag">#{{ tag }}</a>
+      {% endfor %}
+    </div>
     {% endif %}
 
-    {% if page.previous %}
-      <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
-        &larr; <span class="nav-title nav-title-prev">older</span>
+    <div class="post__navigation">
+      {% if page.previous.url %}
+      <a class="prev" href="{{site.baseurl}}{{page.previous.url}}">
+        <div class="prev__post-icon">
+          <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m352 128.4-32.3-32.4-159.7 160 159.7 160 32.3-32.4-127.3-127.6z"/></svg>
+        </div>
+        <span class="post__nav-wrapper">
+          <div class="post__nav-image" style="background-image: url({{site.baseurl}}{{page.previous.image}})"></div>
+          <h2 class="post__nav-title">{{page.previous.title}}<br><time datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%B %d, %Y'}}</time></h2>
+        </span>
       </a>
+      {% endif %}
+
+      {% if page.next.url %}
+      <a class="next" href="{{site.baseurl}}{{page.next.url}}">
+        <div class="next__post-icon">
+          <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m160 128.4 32.3-32.4 159.7 160-159.7 160-32.3-32.4 127.3-127.6z"/></svg>
+        </div>
+        <span class="post__nav-wrapper">
+          <div class="post__nav-image" style="background-image: url({{site.baseurl}}{{page.next.image}})"></div>
+          <h2 class="post__nav-title">{{page.next.title}}<br><time datetime="{{ page.date | date_to_xmlschema }}">{{page.date | date: '%B %d, %Y'}}</time></h2>
+        </span>
+      </a>
+      {% endif %}
+    </div>
+
+    {% if site.disqus-identifier %}
+      {% include show-disqus.html %}
     {% endif %}
 
   </article>
-</section>
+</div>

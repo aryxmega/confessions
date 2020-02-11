@@ -3,19 +3,14 @@ layout: default
 ---
 
 <div class="container">
-  <section class="author" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
-    <div class="author__inner">
-      <h1 class="author__job">{{ site.author.job }}</h1>
-      <div class="author__more">
-        <a href="{{site.baseurl}}/about/" class="say-hello">Learn more →</a>
-      </div>
-    </div>
-  </section>
-</div>
 
-<div class="container">
-  {% if site.posts.size > 0 %}
-    {% for post in site.posts %}
+  <section class="tag">
+
+    <div class="tag__head" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
+      <h1 class="tag__title">#{{ page.tag }}</h1>
+    </div>
+
+    {% for post in page.posts %}
     <div class="article" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">
       {% if post.image %}
       <div class="article__image-box">
@@ -29,9 +24,10 @@ layout: default
         <div class="article__meta">
           <span class="article__date"><time datetime="{{ post.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ post.date | date: date_format }}</time></span>
         </div>
-        <!--<a href="{{ post.url | prepend: site.baseurl }}" class="read-more">Read story</a>-->
+        <a href="{{ post.url | prepend: site.baseurl }}" class="read-more">Read story</a>
       </div>
     </div>
     {% endfor %}
-  {% endif %}
+  </section>
+
 </div>

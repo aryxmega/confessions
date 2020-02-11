@@ -1,37 +1,85 @@
-# Title of your blog; shows in the header
-name: "@ry"
-
-# Description of your content (will only be used on Google Search)
-description: "American-Indonesian product designer and front-end engineer."
-
-# Your name. Will show in your footer + sidebar
-author: "Ary"
-
-url: "http://awwwry.com"
+title: '@AWWWRY'
+logo: 
+description: American-Indonesian father, fiancé, product designer and front-end developer from Los Angeles, California.
+keywords: Ary Mega, American-Indonesian, Balinese, Product Designer, UX Designer, Front-End Engineer, Web Developer
 baseurl: ""
+url: "https://awwwry.com"
 
-# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
-author-bio: "I'm an American-Indonesian from Los Angeles, California. During business hours, I provide e-commerce solutions as a product designer and front-end engineer. After hours, I dedicate my time to my partner, Alexandra, our son, Arro, or working on my personal ventures."
 
-# Social Accounts
+# Author Settings
+author:
+  name: '@AWWWRY'
+  image: https://media.giphy.com/media/5n067EUZwH8cvtRfGz/giphy.gif
+  job: Full-time Balinese father and fiancé. Sometimes product designer and web developer.
+  bio: American-Indonesian father, fiancé, product designer and front-end developer from Los Angeles, California.
+  email: arymega@gmail.com
 
-twitter: awwwry
-github: awwwry
-instagram: awwwry
-linkedin: awwwry
 
-# Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
+# Contact links
+contact:
+  - name: GitHub
+    link: https://github.com/awwwry
+  - name: Instagram
+    link: https://instagram.com/awwwry
+  - name: LinkedIn
+    link: https://linkedin.com/in/awwwry
+  - name: Merch
+    link: https://teespring.com/stores/awwwry
+  - name: Reddit
+    link: https://reddit.com/u/awwwry
+  - name: Spotify
+    link: https://open.spotify.com/playlist/0hvGuO3GFmX3zNWxaK17sZ
+  - name: Twitter
+    link: https://twitter.com/awwwry
 
+
+# Comment Section (Disqus)
+disqus-identifier:
+
+
+# Google Analytics
+google-analytics: UA-64088985-1
+
+
+# Build settings
 markdown: kramdown
 permalink: pretty
 plugins:
-  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll/tagging
 
-paginate: 10
-paginate_path: "/page/:num"
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
 
-# SCSS
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag-page
+tag_permalink_style:  pretty
 
 sass:
-  sass_dir: _scss
-  style: :compressed
+  sass_dir: _sass
+  style: compressed
+  sourcemap: never
+
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
