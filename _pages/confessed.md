@@ -8,7 +8,7 @@ permalink: /confessed/
     <div class="author__inner">
       <h1 class="author__job">{{ site.author.job }}</h1>
       <p class="author__bio">{{ site.author.bio }}</p>
-      <div class="author__more">
+      <div class="confessed__submitted">
         <p>Your confession has been submitted to be randomly chosen. New confession daily. Keep an eye out for yours.</p>
       </div>     
     </div>

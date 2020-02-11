@@ -43,7 +43,8 @@
   max-width: 520px;
 }
 
-.author__more {
+.author__more,
+.confessed__submitted {
   margin: 60px auto 0;
   text-align: center;
   width: 80%;
@@ -51,6 +52,15 @@
     color: $primary-color;
     font-weight: 500;
     line-height: 1.6;
+  }
+}
+
+.confessed__submitted {
+  border-left: 4px solid $primary-color;
+  padding: 4px 0 4px 20px;
+  text-align: left;
+  p {
+    margin-bottom: 0;
   }
 }
 
