@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /confessed/
 ---
 
 <div class="container">
@@ -8,15 +9,7 @@ layout: default
       <h1 class="author__job">{{ site.author.job }}</h1>
       <p class="author__bio">{{ site.author.bio }}</p>
       <div class="author__more">
-        <!--<a href="{{site.baseurl}}/about/" class="say-hello">Confess</a>-->
-        <form name="contact" action="/confessed/" method="POST" data-netlify="true">
-          <p>
-            <input type="text" name="confession" placeholder="I tab between windows all day long 😂" />
-          </p>
-          <p>
-            <button type="submit" class="button-confess">Confess</button>
-          </p>
-        </form>
+        <p>Your confession has been submitted to be randomly chosen. New confession daily. Keep an eye out for yours.</p>
       </div>     
     </div>
   </section>
