@@ -287,7 +287,8 @@
 
 /* Post Share */
 .post__share {
-  margin-bottom: 60px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .share__item {
@@ -296,15 +297,15 @@
 }
 
 .share__link svg {
-  width: 21px;
-  height: 21px;
-  fill: $gray-lighten;
+  width: 24px;
+  height: 24px;
+  fill: $blue-medium;
   transition: fill 200ms;
 }
 
 .share__link:hover {
   svg {
-    fill: $dark;
+    fill: $gray-lighten;
   }
 }
 

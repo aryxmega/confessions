@@ -6,11 +6,11 @@ body {
   font-family: $sans-serif;
   font-size: 16px;
   color: $white;
-  background-color: $blue-dark;
+  background-color: $blue-light;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   input, textarea {
-    border: 2px solid $blue-dark;
+    border: 2px solid $secondary-color;
     outline: none;
     padding: 16px;
     width: 100%;
