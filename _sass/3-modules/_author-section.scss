@@ -37,7 +37,8 @@
   }
 }
 
-.author__bio {
+.author__bio,
+.author__notes {
   margin: 0 auto 40px;
   font-size: 24px;
   line-height: 1.6;
@@ -48,6 +49,11 @@
   @media (max-width: $mobile) {
     font-size: 16px;
   }
+}
+
+.author__notes {
+  font-size: 16px;
+  max-width: 320px
 }
 
 .author__more,
