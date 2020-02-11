@@ -4,10 +4,10 @@ permalink: /confessed/
 ---
 
 <div class="container">
-  <section class="author" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
-    <div class="author__inner">
-      <h1 class="author__job">{{ site.author.job }}</h1>
-      <p class="author__bio">{{ site.author.bio }}</p>
+  <section class="siteheader" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
+    <div class="siteheader__inner">
+      <h1 class="siteheader__title">{{ site.siteheader.title }}</h1>
+      <p class="siteheader__slogan">{{ site.siteheader.slogan }}</p>
       <div class="confessed__submitted">
         <p>Your confession has been submitted to be randomly chosen. New confession posted daily. Keep an eye out for yours.</p>
       </div>     
@@ -18,17 +18,17 @@ permalink: /confessed/
 <div class="container">
   {% if site.posts.size > 0 %}
     {% for post in site.posts %}
-    <div class="article" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">
+    <div class="confession" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="800">
       {% if post.image %}
-      <div class="article__image-box">
-        <a href="{{post.url | prepend: site.baseurl}}" class="article__image" style="background-image: url({{site.baseurl}}{{post.image}})"></a>
+      <div class="confession__image-box">
+        <a href="{{post.url | prepend: site.baseurl}}" class="confession__image" style="background-image: url({{site.baseurl}}{{post.image}})"></a>
       </div>
       {% endif %}
-      <div class="article__content">
-        <div class="article__meta">
-          <span class="article__date"><time datetime="{{ post.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ post.date | date: date_format }}</time></span>
+      <div class="confession__content">
+        <div class="confession__meta">
+          <span class="confession__date"><time datetime="{{ post.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ post.date | date: date_format }}</time></span>
         </div>
-        <h2 class="article__title">{{post.title}}</h2>
+        <h2 class="confession__title">{{post.title}}</h2>
       </div>
     </div>
     {% endfor %}
