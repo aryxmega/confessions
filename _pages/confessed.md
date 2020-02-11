@@ -9,7 +9,7 @@ permalink: /confessed/
       <h1 class="author__job">{{ site.author.job }}</h1>
       <p class="author__bio">{{ site.author.bio }}</p>
       <div class="confessed__submitted">
-        <p>Your confession has been submitted to be randomly chosen. New confession daily. Keep an eye out for yours.</p>
+        <p>Your confession has been submitted to be randomly chosen. New confession posted daily. Keep an eye out for yours.</p>
       </div>     
     </div>
   </section>
