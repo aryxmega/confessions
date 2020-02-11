@@ -66,6 +66,7 @@
   border-left: 4px solid $primary-color;
   padding: 4px 0 4px 20px;
   text-align: left;
+  color: $white;
   p {
     margin-bottom: 0;
   }
@@ -91,6 +92,7 @@
   margin: 4px;
   &:hover {
     transform: scale(1.1);
+    cursor: pointer;
   }
 }
 
