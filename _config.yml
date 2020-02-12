@@ -38,7 +38,7 @@ disqus-identifier:
 
 
 # Google Analytics
-google-analytics: UA-158295177-1
+google-analytics: 'UA-158295177-1'
 
 
 # Build settings
