@@ -2,6 +2,10 @@
 .confession {
   display: flex;
   margin-bottom: 60px;
+  img {
+    margin-top: 32px;
+    margin-bottom: 0px;
+  }
 }
 
 .confession__content {
