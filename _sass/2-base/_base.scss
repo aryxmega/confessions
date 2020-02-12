@@ -16,6 +16,7 @@ body {
     width: 100%;
     margin: 16px auto 0;
     border-radius: 8px;
+    transition: all 500ms;
     &:focus {
       box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 40px;
     }
@@ -104,8 +105,9 @@ img {
   width: 100%;
   height: auto;
   vertical-align: middle;
-  box-shadow: 0 10px 20px -4px rgba(30,28,122,0.3);
-  margin: 0 0 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 40px;
+  margin: 20px auto;
+  border-radius: 12px;
   &+em {
     text-align: center;
     display: block;
