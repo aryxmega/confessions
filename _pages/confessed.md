@@ -6,7 +6,7 @@ permalink: /confessed/
 <div class="container">
   <section class="siteheader" data-aos="fade-up" data-aos-easing="ease-out-quad" data-aos-duration="700">
     <div class="siteheader__inner">
-      <h1 class="siteheader__title">{{ site.siteheader.title }}</h1>
+      <h1 class="siteheader__title"><a href="{{ site.url }}" title="Home">{{ site.siteheader.title }}</a></h1>
       <p class="siteheader__slogan">{{ site.siteheader.slogan }}</p>
       <div class="confessed__submitted">
         <p>Your confession has been submitted to be randomly chosen. New confession posted daily. Keep an eye out for yours.</p>

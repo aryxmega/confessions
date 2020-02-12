@@ -30,6 +30,14 @@
   text-align: center;
   color: $secondary-color;
   font-weight: 900;
+  a {
+    text-decoration: none;
+    transition: all 500ms;
+    &:hover {
+      color: $secondary-color;
+      text-decoration: line-through;
+    }
+  }
   @media (max-width: $mobile) {
     font-size: 40px;
     line-height: 1.4;
@@ -88,7 +96,7 @@
     padding-top: 20px;
     span {
       background: $secondary-color;
-      padding: 4px 12px;
+      padding: 4px 8px;
       border-radius: 4px;
     }
   }
