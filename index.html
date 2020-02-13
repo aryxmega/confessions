@@ -31,6 +31,7 @@ layout: default
           <span class="confession__date"><time datetime="{{ post.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ post.date | date: date_format }}</time></span>
         </div>
         <h2 class="confession__title">{{ post.title }}</h2>
+        <img src="{{ post.image }}" alt=".gif from Giphy" />
       </div>
     </div>
     {% endfor %}
