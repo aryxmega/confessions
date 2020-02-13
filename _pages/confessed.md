@@ -9,7 +9,7 @@ permalink: /confessed/
       <h1 class="siteheader__title"><a href="{{ site.url }}" title="Home">{{ site.siteheader.title }}</a></h1>
       <p class="siteheader__slogan">{{ site.siteheader.slogan }}</p>
       <div class="confessed__submitted">
-        <p>Your confession has been submitted to be randomly chosen. New confession posted daily. Keep an eye out for yours.</p>
+        <p>Your confession has been submitted and queued to be published within 24 hours.</p>
       </div>     
     </div>
   </section>
