@@ -35,7 +35,6 @@
     transition: all 500ms;
     &:hover {
       color: $secondary-color;
-      text-decoration: line-through;
     }
   }
   @media (max-width: $mobile) {
